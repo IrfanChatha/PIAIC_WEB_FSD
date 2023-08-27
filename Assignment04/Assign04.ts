@@ -46,6 +46,13 @@ else {
 }
 
 //  - Write a program that takes temperature and check it. If it is cold then suggest the user to wear warm clothes and so on according to the weather.
+var currentTempCelsius:number = 10;
+if(currentTempCelsius < 15){
+    console.log("It's cold. Wear warm clothes.")
+}
+else {
+    console.log("It's hot. Wear summer clothes.")
+}
 
 //  - Write a program that checks if the given number is  divisible by 3 or 5 or both or not divisible by anyone show output accordingly.
 

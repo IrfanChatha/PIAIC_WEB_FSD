@@ -40,6 +40,13 @@ else {
     console.log("User is Adult.");
 }
 //  - Write a program that takes temperature and check it. If it is cold then suggest the user to wear warm clothes and so on according to the weather.
+var currentTempCelsius = 10;
+if (currentTempCelsius < 15) {
+    console.log("It's cold. Wear warm clothes.");
+}
+else {
+    console.log("It's hot. Wear summer clothes.");
+}
 //  - Write a program that checks if the given number is  divisible by 3 or 5 or both or not divisible by anyone show output accordingly.
 //  - Write a program that checks if the given year is leap year or not.
 //  - Develop a program that determines the day of the week. Ask the user for a number (1-7) and use nested if statements to print the corresponding day's name.
