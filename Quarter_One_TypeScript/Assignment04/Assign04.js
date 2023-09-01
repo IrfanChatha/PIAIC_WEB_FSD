@@ -48,6 +48,19 @@ else {
     console.log("It's hot. Wear summer clothes.");
 }
 //  - Write a program that checks if the given number is  divisible by 3 or 5 or both or not divisible by anyone show output accordingly.
+var numDiv = 92;
+if (numDiv % 3 == 0 && numDiv % 5 != 0) {
+    console.log("Number is divisible by 3");
+}
+else if (numDiv % 3 != 0 && numDiv % 5 == 0) {
+    console.log("Number is divisible by 5");
+}
+else if (numDiv % 3 == 0 && numDiv % 5 == 0) {
+    console.log("Number is divisible by 3 and 5");
+}
+else {
+    console.log("Number is not divisible by 3 or 5");
+}
 //  - Write a program that checks if the given year is leap year or not.
 //  - Develop a program that determines the day of the week. Ask the user for a number (1-7) and use nested if statements to print the corresponding day's name.
 //  - Write a program that takes the number of units consumed by a user if it is greater than 100 then add 10% tax if greater than 200 then add 15% of tax so on up to if greater than 500 then add 25% of tax

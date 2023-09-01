@@ -55,6 +55,16 @@ else {
 }
 
 //  - Write a program that checks if the given number is  divisible by 3 or 5 or both or not divisible by anyone show output accordingly.
+var numDiv: number = 92;
+if (numDiv % 3 == 0 && numDiv % 5 != 0){
+console.log("Number is divisible by 3");
+} else if (numDiv % 3 != 0 && numDiv % 5 == 0){
+    console.log("Number is divisible by 5");
+} else if (numDiv % 3 == 0 && numDiv % 5 == 0){
+console.log("Number is divisible by 3 and 5");
+} else {
+console.log("Number is not divisible by 3 or 5");
+}
 
 //  - Write a program that checks if the given year is leap year or not.
 
