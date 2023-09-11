@@ -114,3 +114,4 @@ else if (unitsConsumed > 500) {
     deductTax = (unitsConsumed * 30) / 100;
 }
 console.log("Total Bill: ", deductTax + (unitsConsumed * unitPrice));
+console.log("Unit Price: ", unitPrice);
