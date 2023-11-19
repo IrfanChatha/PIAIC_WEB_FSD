@@ -1,4 +1,8 @@
 import React from 'react'
+import Image from 'next/image'
+import Campus1 from '../../img/Campus1.png'
+import Campus2 from '../../img/Campus2.png'
+import Campus3 from '../../img/Campus3.png'
 
 const CampusSection = () => {
     return (
@@ -12,19 +16,19 @@ const CampusSection = () => {
 
             <div className="row">
                 <div className="campus-col">
-                    <img src="../../img/Campus1.png" alt="" />
+                    <Image alt="Campus1" src={Campus1} width="" height="" style={{ height: "auto" }} />
                     <div className="layer">
                         <h3>DELHI</h3>
                     </div>
                 </div>
                 <div className="campus-col">
-                    <img src="../../img/Campus2.png" alt="" />
+                    <Image alt="Campus1" src={Campus2} width="" height="" style={{ height: "auto" }} />
                     <div className="layer">
                         <h3>HYDERABAD</h3>
                     </div>
                 </div>
                 <div className="campus-col">
-                    <img src="../../img/Campus3.png" alt="" />
+                    <Image alt="Campus1" src={Campus3} width="" height="" style={{ height: "auto" }} />
                     <div className="layer">
                         <h3>MUMBAI</h3>
                     </div>

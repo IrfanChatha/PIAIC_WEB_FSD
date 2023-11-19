@@ -1,4 +1,8 @@
 import React from 'react'
+import Image from 'next/image'
+import Library from '../../img/libary.png'
+import Playground from '../../img/playground.png'
+import Food from '../../img/food.png'
 
 const FacilitiesSection = () => {
     return (
@@ -12,19 +16,19 @@ const FacilitiesSection = () => {
 
             <div className="row">
                 <div className="facilities-col">
-                    <img src="../../img/libary.png" alt="" />
+                    <Image alt="Library" src={Library} width="" height="" style={{ height: "auto" }} />
                     <h3>Best Libary</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis asperiores atque aperiam.
                     </p>
                 </div>
                 <div className="facilities-col">
-                    <img src="../../img/playground.png" alt="" />
+                    <Image alt="Playground" src={Playground} width="" height="" style={{ height: "auto" }} />
                     <h3>Athletics</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis asperiores atque aperiam.
                     </p>
                 </div>
                 <div className="facilities-col">
-                    <img src="../../img/food.png" alt="" />
+                    <Image alt="Food" src={Food} width="" height="" style={{ height: "auto" }} />
                     <h3>Tasty and Healthy Food</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis asperiores atque aperiam.
                     </p>
