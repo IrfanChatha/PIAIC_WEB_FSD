@@ -3,6 +3,7 @@ import LandingPage from "./pages/LandingPage/LandingPage";
 import CoursePage from "./pages/CoursePage/CoursePage"
 import BlogPage from "./pages/BlogPage/BlogPage"
 import AboutPage from "./pages/AboutPage/AboutPage"
+import ContactUsPage from "./pages/ContactUsPage/ContactUsPage"
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -10,13 +11,12 @@ export const metadata: Metadata = {
 }
 export default function Home() {
   return (
-
     <>
-
       <LandingPage />
       <CoursePage />
       <BlogPage />
       <AboutPage />
+      <ContactUsPage />
     </>
   )
 }
