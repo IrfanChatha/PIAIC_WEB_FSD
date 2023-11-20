@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-import Campus1 from '../../img/Campus1.png'
-import Campus2 from '../../img/Campus2.png'
-import Campus3 from '../../img/Campus3.png'
+import Campus1 from '../../../img/Campus1.png'
+import Campus2 from '../../../img/Campus2.png'
+import Campus3 from '../../../img/Campus3.png'
 
 const CampusSection = () => {
     return (

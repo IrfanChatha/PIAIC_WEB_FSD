@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-import Library from '../../img/libary.png'
-import Playground from '../../img/playground.png'
-import Food from '../../img/food.png'
+import Library from '../../../img/libary.png'
+import Playground from '../../../img/playground.png'
+import Food from '../../../img/food.png'
 
 const FacilitiesSection = () => {
     return (
