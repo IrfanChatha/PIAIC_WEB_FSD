@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const Footer = () => {
     return (
@@ -16,7 +17,7 @@ const Footer = () => {
                 <i className="fab fa-linkedin"></i>
             </div>
             <p>Made with <i className="fas fa-heart"></i> by <a href="#">Irfan Maqbool</a></p>
-            <p>Copyright © 2023 <a href="index.html">Xplore Skill</a>. All Rights Reserved</p>
+            <p>Copyright © 2023 <Link href="./">Xplore Skill</Link>. All Rights Reserved</p>
         </section>
     )
 }
