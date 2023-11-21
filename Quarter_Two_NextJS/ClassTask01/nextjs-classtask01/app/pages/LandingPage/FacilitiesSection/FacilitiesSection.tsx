@@ -16,19 +16,19 @@ const FacilitiesSection = () => {
 
             <div className="row">
                 <div className="facilities-col">
-                    <Image alt="Library" src={Library} width="" height="" style={{ height: "auto" }} />
+                    <Image alt="Library" src={Library} style={{ height: "auto" }} />
                     <h3>Best Libary</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis asperiores atque aperiam.
                     </p>
                 </div>
                 <div className="facilities-col">
-                    <Image alt="Playground" src={Playground} width="" height="" style={{ height: "auto" }} />
+                    <Image alt="Playground" src={Playground} style={{ height: "auto" }} />
                     <h3>Athletics</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis asperiores atque aperiam.
                     </p>
                 </div>
                 <div className="facilities-col">
-                    <Image alt="Food" src={Food} width="" height="" style={{ height: "auto" }} />
+                    <Image alt="Food" src={Food} style={{ height: "auto" }} />
                     <h3>Tasty and Healthy Food</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis asperiores atque aperiam.
                     </p>

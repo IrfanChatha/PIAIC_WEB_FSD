@@ -10,7 +10,7 @@ const CourseHeaderSection = () => {
                 </Link>
                 <div className="nav-links" id="navLinks">
 
-                    <i className="fa fa-times" onClick="hideMenu()"></i>
+                    <i className="fa fa-times" ></i>
                     <ul>
                         <li><Link href="/">Home</Link></li>
                         <li><Link href="./CoursePage">Course</Link></li>
@@ -19,7 +19,7 @@ const CourseHeaderSection = () => {
                         <li><Link href="./ContactUsPage">Contact</Link></li>
                     </ul>
                 </div>
-                <i className="fa fa-bars" onClick="showMenu()"></i>
+                <i className="fa fa-bars" ></i>
 
             </nav>
             <h1>Our Courses</h1>

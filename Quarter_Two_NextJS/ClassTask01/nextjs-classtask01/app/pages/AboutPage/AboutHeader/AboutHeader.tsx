@@ -9,7 +9,7 @@ const AboutHeader = () => {
                     <i className="fab fa-staylinked"></i>kill
                 </Link>
                 <div className="nav-links" id="navLinks">
-                    <i className="fa fa-times" onClick="hideMenu()"></i>
+                    <i className="fa fa-times" ></i>
                     <ul>
                         <li><Link href="/">Home</Link></li>
                         <li><Link href="./CoursePage">Course</Link></li>
@@ -18,7 +18,7 @@ const AboutHeader = () => {
                         <li><Link href="./ContactUsPage">Contact</Link></li>
                     </ul>
                 </div>
-                <i className="fa fa-bars" onclick="showMenu()"></i>
+                <i className="fa fa-bars" ></i>
             </nav>
             <h1>About Us</h1>
         </section>

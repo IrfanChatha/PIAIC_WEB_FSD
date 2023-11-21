@@ -9,7 +9,7 @@ const ContactHeader = () => {
                     <i className="fab fa-staylinked"></i>kill
                 </Link>
                 <div className="nav-links" id="navLinks">
-                    <i className="fa fa-times" onClick="hideMenu()"></i>
+                    <i className="fa fa-times" ></i>
                     <ul>
                         <ul>
                             <li><Link href="/">Home</Link></li>
@@ -20,7 +20,7 @@ const ContactHeader = () => {
                         </ul>
                     </ul>
                 </div>
-                <i className="fa fa-bars" onClick="showMenu()"></i>
+                <i className="fa fa-bars" ></i>
             </nav>
             <h1>Contact Us</h1>
         </section>

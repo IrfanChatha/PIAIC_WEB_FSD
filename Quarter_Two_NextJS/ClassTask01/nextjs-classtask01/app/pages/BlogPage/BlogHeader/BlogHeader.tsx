@@ -5,12 +5,12 @@ const BlogHeader = () => {
     return (
         <section className="Sub-header">
             <nav>
-            <Link href="/" className="logo">Xplore
+                <Link href="/" className="logo">Xplore
                     <i className="fab fa-staylinked"></i>kill
                 </Link>
                 <div className="nav-links" id="navLinks">
 
-                    <i className="fa fa-times" onClick="hideMenu()"></i>
+                    <i className="fa fa-times" ></i>
                     <ul>
                         <li><Link href="/">Home</Link></li>
                         <li><Link href="./CoursePage">Course</Link></li>
@@ -19,7 +19,7 @@ const BlogHeader = () => {
                         <li><Link href="./ContactUsPage">Contact</Link></li>
                     </ul>
                 </div>
-                <i className="fa fa-bars" onClick="showMenu()"></i>
+                <i className="fa fa-bars" ></i>
 
             </nav>
             <h1>Our Post</h1>

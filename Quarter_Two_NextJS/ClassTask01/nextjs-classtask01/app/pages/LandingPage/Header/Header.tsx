@@ -9,7 +9,7 @@ const Header = () => {
                     <i className="fab fa-staylinked"></i>kill
                 </Link>
                 <div className="nav-links" id="navLinks">
-                    <i className="fa fa-times" onClick="hideMenu()"></i>
+                    <i className="fa fa-times" ></i>
                     <ul>
                         <li><Link href="./">Home</Link></li>
                         <li><Link href="./pages/CoursePage">Course</Link></li>
@@ -18,7 +18,7 @@ const Header = () => {
                         <li><Link href="./pages/ContactUsPage">Contact</Link></li>
                     </ul>
                 </div>
-                <i className="fa fa-bars" onClick="showMenu()"></i>
+                <i className="fa fa-bars" ></i>
             </nav>
             <div className="text_box">
                 <h2>GET READY</h2>

@@ -16,19 +16,19 @@ const CampusSection = () => {
 
             <div className="row">
                 <div className="campus-col">
-                    <Image alt="Campus1" src={Campus1} width="" height="" style={{ height: "auto" }} />
+                    <Image alt="Campus1" src={Campus1} style={{ height: "auto" }} />
                     <div className="layer">
                         <h3>DELHI</h3>
                     </div>
                 </div>
                 <div className="campus-col">
-                    <Image alt="Campus1" src={Campus2} width="" height="" style={{ height: "auto" }} />
+                    <Image alt="Campus1" src={Campus2} style={{ height: "auto" }} />
                     <div className="layer">
                         <h3>HYDERABAD</h3>
                     </div>
                 </div>
                 <div className="campus-col">
-                    <Image alt="Campus1" src={Campus3} width="" height="" style={{ height: "auto" }} />
+                    <Image alt="Campus1" src={Campus3} style={{ height: "auto" }} />
                     <div className="layer">
                         <h3>MUMBAI</h3>
                     </div>
