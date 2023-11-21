@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const CourseHeaderSection = () => {
     return (
@@ -11,11 +12,11 @@ const CourseHeaderSection = () => {
 
                     <i className="fa fa-times" onClick="hideMenu()"></i>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="course.html">Course</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><Link href="/">Home</Link></li>
+                        <li><Link href="./CoursePage">Course</Link></li>
+                        <li><Link href="./BlogPage">Blog</Link></li>
+                        <li><Link href="./AboutPage">About</Link></li>
+                        <li><Link href="./ContactUsPage">Contact</Link></li>
                     </ul>
                 </div>
                 <i className="fa fa-bars" onClick="showMenu()"></i>

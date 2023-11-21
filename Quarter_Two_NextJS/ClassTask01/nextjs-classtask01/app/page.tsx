@@ -1,9 +1,9 @@
 import React from 'react'
-import LandingPage from "./pages/LandingPage/LandingPage";
-import CoursePage from "./pages/CoursePage/CoursePage"
-import BlogPage from "./pages/BlogPage/BlogPage"
-import AboutPage from "./pages/AboutPage/AboutPage"
-import ContactUsPage from "./pages/ContactUsPage/ContactUsPage"
+import LandingPage from "./pages/LandingPage/page";
+import CoursePage from "./pages/CoursePage/page"
+import BlogPage from "./pages/BlogPage/page"
+import AboutPage from "./pages/AboutPage/page"
+import ContactUsPage from "./pages/ContactUsPage/page"
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
