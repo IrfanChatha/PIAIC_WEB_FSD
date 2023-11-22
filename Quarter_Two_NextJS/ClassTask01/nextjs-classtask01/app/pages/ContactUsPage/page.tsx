@@ -2,7 +2,6 @@ import React from 'react'
 import ContactHeader from './ContactHeader/ContactHeader'
 import ContactLocation from './ContactLocation/ContactLocation'
 import ContactMain from './ContactMain/ContactMain'
-import Footer from '../LandingPage/Footer/Footer'
 
 
 const ContactUsPage = () => {
@@ -11,7 +10,6 @@ const ContactUsPage = () => {
             <ContactHeader />
             <ContactLocation />
             <ContactMain />
-            <Footer />
         </>
     )
 }
