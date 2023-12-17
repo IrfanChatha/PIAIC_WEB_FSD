@@ -1,17 +1,21 @@
 "use client"
 import React from 'react';
-// import DisplayContacts from './displayContacts.tsx/displayContacts';
+import { useState } from 'react';
+import DisplayContacts from './displayContacts.tsx/displayContacts';
 export default function Home() {
 
-  const handleSubmit = () => {
-    alert("Button click");
-  };
+  const [contactInfo, setContactInfo] = useState({
+    name: "",
+    email: "",
+    message: ""
+  })
 
-  var userName: string = "Default"
-  const userContact = (event: string) => {
-    return (
-      console.log("Event", event.target.value)
-    )
+  const onChangeHandler = (e) => {
+    let userDetails = {
+      ...contactInfo,
+      [e.target.name]: e.target.value
+    }
+    setContactInfo(userDetails)
   }
 
   return (
@@ -26,6 +30,7 @@ export default function Home() {
               Name
             </label>
             <input
+              onChange={onChangeHandler}
               type="text"
               id="name"
               name="name"
@@ -38,6 +43,7 @@ export default function Home() {
               Email
             </label>
             <input
+              onChange={onChangeHandler}
               type="email"
               id="email"
               name="email"
@@ -50,6 +56,7 @@ export default function Home() {
               Message
             </label>
             <textarea
+              onChange={onChangeHandler}
               id="message"
               name="message"
               rows="4"
@@ -59,7 +66,6 @@ export default function Home() {
           </div>
           <div className="text-center">
             <button
-              onClick={handleSubmit}
               type="submit"
               className="bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600 transition duration-300"
             >
@@ -68,6 +74,8 @@ export default function Home() {
           </div>
         </form>
       </div>
+
+      <DisplayContacts contactData={contactInfo} />
     </main>
   )
 }
