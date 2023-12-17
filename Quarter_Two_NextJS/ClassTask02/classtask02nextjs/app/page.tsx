@@ -10,10 +10,10 @@ export default function Home() {
     message: ""
   })
 
-  const onChangeHandler = (e) => {
+  const onChangeHandler = (event) => {
     let userDetails = {
       ...contactInfo,
-      [e.target.name]: e.target.value
+      [event.target.name]: event.target.value
     }
     setContactInfo(userDetails)
   }
@@ -76,6 +76,7 @@ export default function Home() {
       </div>
 
       <DisplayContacts contactData={contactInfo} />
+
     </main>
   )
 }
