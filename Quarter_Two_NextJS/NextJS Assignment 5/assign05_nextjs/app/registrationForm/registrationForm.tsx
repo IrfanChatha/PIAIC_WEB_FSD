@@ -1,31 +1,54 @@
 "use client"
 
 import React, { useState } from 'react';
+import { object, string, number, date, InferType } from 'yup';
 
-interface FormData {
+let userSchema = object({
+    firstName: string().required(),
+    lastName: string().required(),
+    dateOfBirth: date().required(),
+    gender: string().required(),
+    education: string().required(),
+    homeAddress: string().required(),
+    city: string().required(),
+    country: string().required(),
+    mobileNumber: number().required().positive().integer(),
+    email: string().email()
+});
+
+// parse and assert validity
+const user = userSchema.validate(FormData);
+
+type FormData = InferType<typeof userSchema>;
+{
     firstName: string;
     lastName: string;
-    dateOfBirth: string;
+    dateOfBirth: date;
     gender: string;
     education: string;
     homeAddress: string;
     city: string;
     country: string;
-    mobileNumber: string;
+    mobileNumber: number;
     email: string;
 }
+
+string()
+    .min(3, 'must be at least 3 characters long')
+    .email('must be a valid email')
+    .validate('no'); // ValidationError
 
 const RegistrationForm: React.FC = () => {
     const [formData, setFormData] = useState<FormData>({
         firstName: '',
         lastName: '',
-        dateOfBirth: '',
+        dateOfBirth: new Date(),
         gender: '',
         education: '',
         homeAddress: '',
         city: '',
         country: '',
-        mobileNumber: '',
+        mobileNumber: 0,
         email: '',
     });
 
@@ -44,9 +67,9 @@ const RegistrationForm: React.FC = () => {
 
     return (
         <div className="max-w-3xl mx-auto">
-            <form onSubmit={handleSubmit} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-                <h2 className="text-2xl mb-4 font-bold text-center">Registration Form</h2>
-                <div className="grid grid-cols-2 gap-4">
+            <form onSubmit={handleSubmit} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 bg-orange-300">
+                <h2 className="text-3xl mb-4 font-bold text-center text-red-500">Registration Form</h2>
+                <div className="grid grid-cols-2 gap-4 ">
                     <div className="col-span-1">
                         {/* Left Side */}
                         <div className="mb-4">
@@ -72,7 +95,7 @@ const RegistrationForm: React.FC = () => {
                                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 id="dateOfBirth"
                                 type="date"
-                                value={formData.dateOfBirth}
+                                value={formData.dateOfBirth.toISOString().split('T')[0]} // Format Date to 'YYYY-MM-DD'
                                 onChange={handleChange}
                                 required
                             />
@@ -200,7 +223,7 @@ const RegistrationForm: React.FC = () => {
                 </div>
                 <div className="flex justify-center">
                     <button
-                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                         type="submit"
                     >
                         Submit
