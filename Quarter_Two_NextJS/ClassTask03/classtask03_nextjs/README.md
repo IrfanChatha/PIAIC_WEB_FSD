@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+ **Project: Expense Tracker**
 
-## Getting Started
+This project is a simple expense tracker application built using React. It allows users to add, edit, and delete expenses, and provides a summary of their spending.
 
-First, run the development server:
+**Getting Started**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+To get started, clone the repository and install the dependencies:
+
+```
+git clone https://github.com/your-username/expense-tracker
+cd expense-tracker
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Once the dependencies are installed, you can run the development server:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The application will be available at http://localhost:3000.
 
-## Learn More
+**Project Structure**
 
-To learn more about Next.js, take a look at the following resources:
+The project is structured as follows:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* `src/`: This directory contains the source code for the application.
+* `src/pages/`: This directory contains the React components for the different pages of the application.
+* `src/pages/expense/`: This directory contains the React components for the expense page.
+* `src/components/`: This directory contains the reusable React components used throughout the application.
+* `src/styles/`: This directory contains the CSS styles for the application.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**Expense Page**
 
-## Deploy on Vercel
+The expense page is the main page of the application. It allows users to add, edit, and delete expenses, and provides a summary of their spending.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The expense page is implemented using the `Expenses` component. The `Expenses` component is a React functional component that uses the `useState` hook to manage the state of the expenses. The `Expenses` component also uses the `useEffect` hook to fetch the expenses from the server when the component is mounted.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The `Expenses` component is composed of the following subcomponents:
+
+* `ExpenseForm`: This component allows users to add a new expense.
+* `ExpenseList`: This component displays a list of the expenses.
+* `ExpenseSummary`: This component provides a summary of the expenses.
+
+**Expense Form**
+
+The expense form is implemented using the `ExpenseForm` component. The `ExpenseForm` component is a React functional component that uses the `useState` hook to manage the state of the form. The `ExpenseForm` component also uses the `useEffect` hook to submit the form data to the server when the form is submitted.
+
+The `ExpenseForm` component is composed of the following subcomponents:
+
+* `TextField`: This component allows users to enter the name of the expense.
+* `NumberField`: This component allows users to enter the amount.
