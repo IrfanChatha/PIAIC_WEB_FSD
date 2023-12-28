@@ -1,11 +1,10 @@
-import Expenses from "./pages/expense/expense";
-
+import Expense from "../app/expense/page"
 function Home() {
-  return (
-    <>
-      <h2>Expenses</h2>
-      <Expenses />
-    </>
-  )
+
+    return (
+        <>
+            <Expense />
+        </>)
 }
-export default Home;
+
+export default Home
