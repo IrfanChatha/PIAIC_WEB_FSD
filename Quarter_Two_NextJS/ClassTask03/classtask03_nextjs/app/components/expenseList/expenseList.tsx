@@ -1,11 +1,10 @@
 "use client"
-import { useState } from 'react';
-import { BiCommentEdit } from "react-icons/bi";
-import { MdDeleteForever } from "react-icons/md";
-import { MdAddChart } from "react-icons/md";
+import React, { useState } from 'react';
+import { BiCommentEdit } from 'react-icons/bi';
+import { MdDeleteForever, MdAddChart } from 'react-icons/md';
 import { ExpenseType } from '@/types/commonTypes';
 import ExpenseModal from '../expenseModal/expenseModal';
-
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid } from 'recharts';
 
 const ExpenseList = () => {
   const [expenses, setExpenses] = useState<ExpenseType[]>([]);
@@ -106,6 +105,14 @@ const ExpenseList = () => {
       <div className="flex justify-end">
         <p className="text-2xl font-semibold mb-4 text-green-500">Total: PKR{total.toFixed(2)}</p>
       </div>
+
+      <BarChart width={500} height={300} data={expenses}>
+        <CartesianGrid stroke="#eee" strokeDasharray="5 5" />
+        <XAxis dataKey="category" stroke="#fff" tick={{ fill: '#fff', fontWeight: 'bold' }} />
+        <YAxis stroke="#fff" tick={{ fill: '#fff', fontWeight: 'bold' }} />
+        <Bar type="monotone" dataKey="amount" fill="#8aff8a" />
+      </BarChart>
+
     </div>
   );
 };

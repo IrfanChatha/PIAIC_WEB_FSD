@@ -5,6 +5,7 @@ import InputComponent from '../../components/InputComponent';
 import ExpenseTable from '../../components/ExpenseTable';
 import { getExpenses, addExpense, updateExpense, deleteExpense } from "../../utils/expenseService";
 
+
 const Expenses: React.FC = () => {
     const [expenses, setExpenses] = useState<Expense[]>(getExpenses());
 
