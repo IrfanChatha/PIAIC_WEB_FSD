@@ -1,2 +1,2 @@
-##Our first nextjs project
+##GENERATIVE AI IMAGE CREATOR
 
