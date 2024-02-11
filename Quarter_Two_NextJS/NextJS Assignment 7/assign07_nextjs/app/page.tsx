@@ -8,7 +8,7 @@ export default function Home() {
       <nav className="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
         <a href="index.html" className="navbar-brand ml-lg-3">
           <h1 className="m-0 display-5">
-            <span className="text-primary">Irfan</span>Chatha
+            <span className="text-primary">Irfan M.</span>Chatha
           </h1>
         </a>
         <button
