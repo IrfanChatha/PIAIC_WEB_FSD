@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import IrfanImage from '../app/img/person.png'
 
 export default function Home() {
   return (
@@ -101,9 +102,9 @@ export default function Home() {
               data-aos="fade-right"
               data-aos-duration={3000}
             >
-              <img
+              <Image
                 className="img-fluid w-100 rounded-circle shadow-sm person_image"
-                src="img/person.png"
+                src={IrfanImage}
                 alt=""
               />
             </div>
