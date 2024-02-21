@@ -1,11 +1,18 @@
 "use client"
 
 import React from 'react';
+import { useState } from 'react';
 
-const Addpage = () => {
+function Addpage() {
+
+    const [title, setTitle] = useState("Old Title");
+
     return (
         <div>
-            <h1>USE STATE PROGRAM 2024</h1>
+            <h1><b>USE STATE PROGRAM 2024 {title}</b></h1>
+
+
+
         </div>
     );
 }
