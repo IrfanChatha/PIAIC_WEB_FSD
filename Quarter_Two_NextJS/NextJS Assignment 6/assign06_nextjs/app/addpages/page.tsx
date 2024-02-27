@@ -7,9 +7,13 @@ function Addpage() {
 
     const [title, setTitle] = useState("Old Title");
 
-    function newTitleHandler() { return setTitle("New Title") }
+    function newTitleHandler() {
+        return (setTitle(999))
+    }
 
-    function oldTitleHandler() { return setTitle("Old Title") }
+    function oldTitleHandler() {
+        return (setTitle(888))
+    }
 
     return (
         <div>
