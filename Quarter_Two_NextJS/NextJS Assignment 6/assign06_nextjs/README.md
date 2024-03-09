@@ -1,8 +1,21 @@
 ## Assignment No 6
 
 NEXT JS HOOKS
-- USE STATE and
-- USE EFFECT
+- useCallback
+- useContext
+- useDebugValue
+- useDeferredValue
+- useEffect
+- useId
+- useImperativeHandle
+- useInsertionEffect
+- useLayoutEffect
+- useMemo
+- useReducer
+- useRef
+- useState
+- useSyncExternalStore
+- useTransition
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
