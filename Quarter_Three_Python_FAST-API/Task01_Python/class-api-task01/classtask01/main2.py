@@ -5,7 +5,7 @@ from sqlmodel import Field, SQLModel, create_engine
 class Students(SQLModel, table=True):
     id: Optional[int] = Field(default=None, primary_key=True)
     name: str
-    age: Optional[int] = None
+    age: int
 
 
 engine = create_engine(
